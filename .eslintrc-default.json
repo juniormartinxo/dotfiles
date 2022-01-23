@@ -1,0 +1,50 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "standard",
+    "standard-jsx",
+    "standard-react",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
+  ],
+  "rules": {
+    "semi": [2, "never"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ],
+    "react/prop-types": "off",
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "ignoreRestSiblings": true }
+    ],
+    "multiline-ternary": ["error", "never"],
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-debug": "warn",
+    "testing-library/no-dom-import": "off",
+    "jest-dom/prefer-checked": "error",
+    "jest-dom/prefer-enabled-disabled": "error",
+    "jest-dom/prefer-required": "error",
+    "jest-dom/prefer-to-have-attribute": "error",
+    "no-undef": "off"
+  }
+}
